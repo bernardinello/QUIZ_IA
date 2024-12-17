@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"> <!-- Specifica la codifica del documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adatta il layout alla larghezza del dispositivo -->
+    <title>Domande Chiuse</title> <!-- Titolo della pagina -->
+    <link rel="stylesheet" href="style.css"> <!-- Collegamento al file CSS -->
+</head>
+<body>
+    <div class="container"> <!-- Contenitore principale della pagina -->
+        <h1>Domande Chiuse</h1> <!-- Titolo della pagina -->
+        <div id="timer"></div> <!-- Mostra il timer in tempo reale -->
+        <form id="close-questions-form"> <!-- Modulo per le domande chiuse -->
+
+            <!-- Prima domanda chiusa con opzione "Altro" -->
+            <label for="question4">1. Qual è il tuo colore preferito?</label>
+            <select id="question4" name="question4" required onchange="handleOtherOption('question4')">
+                <!-- Menu a tendina con le opzioni -->
+                <option value="rosso">Rosso</option>
+                <option value="blu">Blu</option>
+                <option value="verde">Verde</option>
+                <option value="altro">Altro</option> <!-- Opzione "Altro" -->
+            </select>
+            <div id="question4-other-container"></div> <!-- Contenitore per il campo "Altro" -->
+
+            <!-- Seconda domanda chiusa con opzione "Altro" -->
+            <label for="question5">2. Preferisci mare o montagna?</label>
+            <select id="question5" name="question5" required onchange="handleOtherOption('question5')">
+                <!-- Menu a tendina con le opzioni -->
+                <option value="mare">Mare</option>
+                <option value="montagna">Montagna</option>
+                <option value="entrambi">Entrambi</option>
+                <option value="altro">Altro</option> <!-- Opzione "Altro" -->
+            </select>
+            <div id="question5-other-container"></div> <!-- Contenitore per il campo "Altro" -->
+
+            <!-- Pulsante per terminare il test -->
+            <button type="button" onclick="submitCloseQuestions()">Termina Test</button>
+        </form>
+    </div>
+    <script src="script.js"></script> <!-- Collegamento al file JavaScript -->
+</body>
+</html>
+

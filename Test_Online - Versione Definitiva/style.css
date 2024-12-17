@@ -1,0 +1,60 @@
+/* Stile generale per il corpo della pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Contenitore centrale */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titoli */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Stile dei moduli */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Campi di input */
+textarea, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Pulsanti */
+button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Timer */
+#timer {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ff0000;
+}

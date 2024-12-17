@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Domande Aperte</title> 
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container"> <!-- Contenitore principale per il layout della pagina -->
+        <h1>Domande Aperte</h1> <!-- Titolo principale della pagina -->
+        
+        <!-- Sezione del timer -->
+        <div id="timer"></div> <!-- Spazio dove verrà mostrato il timer -->
+
+        <!-- Modulo per le domande aperte -->
+        <form id="open-questions-form"> <!-- Inizio del modulo con un ID univoco -->
+            <!-- Prima domanda -->
+            <label for="question1">1. Descrivi il tuo argomento preferito:</label> 
+            <textarea id="question1" name="question1" required></textarea> <!-- Area di testo obbligatoria per la risposta -->
+
+            <!-- Seconda domanda -->
+            <label for="question2">2. Qual è il tuo hobby preferito?</label>
+            <textarea id="question2" name="question2" required></textarea> <!-- Area di testo obbligatoria per la risposta -->
+
+            <!-- Terza domanda -->
+            <label for="question3">3. Dove vorresti viaggiare e perché?</label>
+            <textarea id="question3" name="question3" required></textarea> <!-- Area di testo obbligatoria per la risposta -->
+
+            <!-- Quarta domanda -->
+            <label for="question4">4. Qual è il tuo piatto preferito e perché?</label>
+            <textarea id="question4" name="question4" required></textarea> <!-- Area di testo obbligatoria per la risposta -->
+
+            <!-- Pulsante per inviare il modulo -->
+            <button type="button" onclick="submitOpenQuestions()">Prosegui</button> 
+            <!-- Il pulsante non invia il modulo direttamente; chiama la funzione JavaScript `submitOpenQuestions` -->
+        </form>
+    </div>
+
+    <!-- Collegamento al file JavaScript -->
+    <script src="script.js"></script> <!-- Include il file script.js per gestire il comportamento della pagina -->
+</body>
+</html>
+
+
